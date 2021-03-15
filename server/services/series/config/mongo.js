@@ -9,10 +9,9 @@ async function connect() {
 
     const uri = 'mongodb://localhost:27017'
     const client = new MongoClient(uri, { useUnifiedTopology: true })
-
     await client.connect()
-
-    const dbMongo = client.db('entertainme')
+    
+    const dbMongo = client.db('entertainme-series')
     
     database = dbMongo
 
